@@ -58,12 +58,12 @@ class ViewController: UIViewController, KDDragAndDropCollectionViewDataSource {
             data.append(items)
         }
         
-        
+        // 所有的玄机都在这里，封装的真不错
         self.dragAndDropManager = KDDragAndDropManager(canvas: self.view, collectionViews: [firstCollectionView, secondCollectionView, thirdCollectionView])
         
     }
 
-    
+    // 不同的viewcontroller 已 tag 区分
     // MARK : UICollectionViewDataSource
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

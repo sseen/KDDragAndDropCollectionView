@@ -58,6 +58,7 @@ class KDDragAndDropManager: NSObject, UIGestureRecognizerDelegate {
     
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
         
+        
         for view in self.views.filter({ v -> Bool in v is KDDraggable})  {
             
                 let draggable = view as! KDDraggable

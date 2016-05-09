@@ -1,0 +1,842 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "KDDraggable"
+- "KDDroppable"
+- "KDDragAndDropManager"
+provides-nominal:
+- "P28KDDragAndDropCollectionViews11KDDraggable"
+- "P28KDDragAndDropCollectionViews11KDDroppable"
+- "C28KDDragAndDropCollectionViews20KDDragAndDropManager"
+- "VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle"
+provides-member:
+- ["P28KDDragAndDropCollectionViews11KDDraggable", ""]
+- ["P28KDDragAndDropCollectionViews11KDDroppable", ""]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", ""]
+- ["VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle", ""]
+provides-dynamic-lookup:
+- "startDraggingAtPoint"
+- "gestureRecognizer"
+- "canDragAtPoint"
+- "updateForLongPress"
+- "willMoveItem"
+- "convertRectToCanvas"
+- "didMoveItem"
+- "didMoveOutItem"
+- "stopDragging"
+- "dropDataItem"
+- "dragDataItem"
+- "canDropAtRect"
+- "representationImageAtPoint"
+- "dataItemAtPoint"
+depends-top-level:
+- !private "BooleanLiteralType"
+- "KDDroppable"
+- "KDDraggable"
+- !private "*"
+- "KDDragAndDropManager"
+- "UIGestureRecognizer"
+- "UITouch"
+- "UIView"
+- !private "-"
+- "CGPoint"
+- "CGRect"
+- "UILongPressGestureRecognizer"
+- !private "print"
+- !private "CGRectIntersection"
+- "Void"
+- !private ">"
+- !private "!="
+- !private "+="
+- "Bool"
+- !private "StringLiteralType"
+- "NSObject"
+- "UIGestureRecognizerDelegate"
+- !private "CGFloat"
+- !private "CGPointMake"
+- "AnyObject"
+- !private "=="
+- "CGPointZero"
+depends-member:
+- !private ["Ps9AnyObject", "Bundle"]
+- !private ["Ps9AnyObject", "CGPointMake"]
+- ["Ps9AnyObject", "CGPointZero"]
+- !private ["Ps9AnyObject", "CGRectIntersection"]
+- !private ["Ps9AnyObject", "KDDragAndDropManager"]
+- ["Ps9AnyObject", "UILongPressGestureRecognizer"]
+- ["Ps9AnyObject", "UIView"]
+- !private ["Ps9AnyObject", "addGestureRecognizer"]
+- !private ["Ps9AnyObject", "addSubview"]
+- !private ["Ps9AnyObject", "addTarget"]
+- !private ["Ps9AnyObject", "alpha"]
+- ["Ps9AnyObject", "bundle"]
+- ["Ps9AnyObject", "canvas"]
+- !private ["Ps9AnyObject", "convertRect"]
+- ["Ps9AnyObject", "convertRectToCanvas"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", "gestureRecognizer"]
+- ["Ps9AnyObject", "gestureRecognizerShouldBegin"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "locationInView"]
+- ["Ps9AnyObject", "longPressGestureRecogniser"]
+- !private ["Ps9AnyObject", "minimumPressDuration"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "removeFromSuperview"]
+- !private ["Ps9AnyObject", "state"]
+- !private ["Ps9AnyObject", "superview"]
+- !private ["Ps9AnyObject", "tag"]
+- ["Ps9AnyObject", "updateForLongPress"]
+- !private ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", "views"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "filter"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "filter"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- ["VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle", "AnyObject"]
+- ["VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle", "CGPoint"]
+- ["VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle", "CGPointZero"]
+- ["VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle", "UIView"]
+- ["VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle", "dataItem"]
+- ["VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle", "init"]
+- ["VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle", "offset"]
+- ["VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle", "overDroppableView"]
+- ["VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle", "representationImageView"]
+- ["VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle", "sourceDraggableView"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC7CGPoint", "x"]
+- !private ["VSC7CGPoint", "y"]
+- !private ["VSC6CGRect", "origin"]
+- !private ["VSC6CGRect", "size"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
+- !private ["Ps11CVarArgType", "Bundle"]
+- !private ["Ps11CVarArgType", "CGPointMake"]
+- ["Ps11CVarArgType", "CGPointZero"]
+- !private ["Ps11CVarArgType", "CGRectIntersection"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "KDDragAndDropManager"]
+- ["Ps11CVarArgType", "UILongPressGestureRecognizer"]
+- ["Ps11CVarArgType", "UIView"]
+- !private ["Ps11CVarArgType", "addGestureRecognizer"]
+- !private ["Ps11CVarArgType", "addSubview"]
+- !private ["Ps11CVarArgType", "addTarget"]
+- !private ["Ps11CVarArgType", "alpha"]
+- ["Ps11CVarArgType", "bundle"]
+- ["Ps11CVarArgType", "canvas"]
+- !private ["Ps11CVarArgType", "convertRect"]
+- ["Ps11CVarArgType", "convertRectToCanvas"]
+- !private ["Ps11CVarArgType", "delegate"]
+- !private ["Ps11CVarArgType", "frame"]
+- ["Ps11CVarArgType", "gestureRecognizer"]
+- ["Ps11CVarArgType", "gestureRecognizerShouldBegin"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "locationInView"]
+- ["Ps11CVarArgType", "longPressGestureRecogniser"]
+- !private ["Ps11CVarArgType", "minimumPressDuration"]
+- !private ["Ps11CVarArgType", "print"]
+- !private ["Ps11CVarArgType", "removeFromSuperview"]
+- !private ["Ps11CVarArgType", "state"]
+- !private ["Ps11CVarArgType", "superview"]
+- !private ["Ps11CVarArgType", "tag"]
+- ["Ps11CVarArgType", "updateForLongPress"]
+- !private ["Ps11CVarArgType", "view"]
+- ["Ps11CVarArgType", "views"]
+- ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "filter"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Bundle"]
+- !private ["Ps28CustomDebugStringConvertible", "CGPointMake"]
+- ["Ps28CustomDebugStringConvertible", "CGPointZero"]
+- !private ["Ps28CustomDebugStringConvertible", "CGRectIntersection"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "KDDragAndDropManager"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- ["Ps28CustomDebugStringConvertible", "UILongPressGestureRecognizer"]
+- ["Ps28CustomDebugStringConvertible", "UIView"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
+- !private ["Ps28CustomDebugStringConvertible", "addSubview"]
+- !private ["Ps28CustomDebugStringConvertible", "addTarget"]
+- !private ["Ps28CustomDebugStringConvertible", "alpha"]
+- ["Ps28CustomDebugStringConvertible", "bundle"]
+- ["Ps28CustomDebugStringConvertible", "canvas"]
+- !private ["Ps28CustomDebugStringConvertible", "convertRect"]
+- ["Ps28CustomDebugStringConvertible", "convertRectToCanvas"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "filter"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- ["Ps28CustomDebugStringConvertible", "gestureRecognizer"]
+- ["Ps28CustomDebugStringConvertible", "gestureRecognizerShouldBegin"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "locationInView"]
+- ["Ps28CustomDebugStringConvertible", "longPressGestureRecogniser"]
+- !private ["Ps28CustomDebugStringConvertible", "minimumPressDuration"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
+- !private ["Ps28CustomDebugStringConvertible", "state"]
+- !private ["Ps28CustomDebugStringConvertible", "superview"]
+- !private ["Ps28CustomDebugStringConvertible", "tag"]
+- ["Ps28CustomDebugStringConvertible", "updateForLongPress"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", "views"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Bundle"]
+- !private ["Ps23CustomStringConvertible", "CGPointMake"]
+- ["Ps23CustomStringConvertible", "CGPointZero"]
+- !private ["Ps23CustomStringConvertible", "CGRectIntersection"]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "KDDragAndDropManager"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- ["Ps23CustomStringConvertible", "UILongPressGestureRecognizer"]
+- ["Ps23CustomStringConvertible", "UIView"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
+- !private ["Ps23CustomStringConvertible", "addSubview"]
+- !private ["Ps23CustomStringConvertible", "addTarget"]
+- !private ["Ps23CustomStringConvertible", "alpha"]
+- ["Ps23CustomStringConvertible", "bundle"]
+- ["Ps23CustomStringConvertible", "canvas"]
+- !private ["Ps23CustomStringConvertible", "convertRect"]
+- ["Ps23CustomStringConvertible", "convertRectToCanvas"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "filter"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- ["Ps23CustomStringConvertible", "gestureRecognizer"]
+- ["Ps23CustomStringConvertible", "gestureRecognizerShouldBegin"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "locationInView"]
+- ["Ps23CustomStringConvertible", "longPressGestureRecogniser"]
+- !private ["Ps23CustomStringConvertible", "minimumPressDuration"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "removeFromSuperview"]
+- !private ["Ps23CustomStringConvertible", "state"]
+- !private ["Ps23CustomStringConvertible", "superview"]
+- !private ["Ps23CustomStringConvertible", "tag"]
+- ["Ps23CustomStringConvertible", "updateForLongPress"]
+- !private ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", "views"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- ["Ps9Equatable", "Began"]
+- !private ["Ps9Equatable", "Bundle"]
+- !private ["Ps9Equatable", "CGPointMake"]
+- ["Ps9Equatable", "CGPointZero"]
+- !private ["Ps9Equatable", "CGRectIntersection"]
+- ["Ps9Equatable", "Changed"]
+- !private ["Ps9Equatable", "Distance"]
+- ["Ps9Equatable", "Ended"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "KDDragAndDropManager"]
+- ["Ps9Equatable", "UILongPressGestureRecognizer"]
+- ["Ps9Equatable", "UIView"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addGestureRecognizer"]
+- !private ["Ps9Equatable", "addSubview"]
+- !private ["Ps9Equatable", "addTarget"]
+- !private ["Ps9Equatable", "alpha"]
+- ["Ps9Equatable", "bundle"]
+- ["Ps9Equatable", "canvas"]
+- !private ["Ps9Equatable", "convertRect"]
+- ["Ps9Equatable", "convertRectToCanvas"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "frame"]
+- ["Ps9Equatable", "gestureRecognizer"]
+- ["Ps9Equatable", "gestureRecognizerShouldBegin"]
+- !private ["Ps9Equatable", "height"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "locationInView"]
+- ["Ps9Equatable", "longPressGestureRecogniser"]
+- !private ["Ps9Equatable", "minimumPressDuration"]
+- !private ["Ps9Equatable", "origin"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "removeFromSuperview"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "state"]
+- !private ["Ps9Equatable", "superview"]
+- !private ["Ps9Equatable", "tag"]
+- ["Ps9Equatable", "updateForLongPress"]
+- !private ["Ps9Equatable", "view"]
+- ["Ps9Equatable", "views"]
+- !private ["Ps9Equatable", "width"]
+- !private ["Ps9Equatable", "x"]
+- !private ["Ps9Equatable", "y"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps13GeneratorType", "Element"]
+- ["Ps8Hashable", "Began"]
+- !private ["Ps8Hashable", "Bundle"]
+- !private ["Ps8Hashable", "CGPointMake"]
+- ["Ps8Hashable", "CGPointZero"]
+- !private ["Ps8Hashable", "CGRectIntersection"]
+- ["Ps8Hashable", "Changed"]
+- !private ["Ps8Hashable", "Distance"]
+- ["Ps8Hashable", "Ended"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "KDDragAndDropManager"]
+- ["Ps8Hashable", "UILongPressGestureRecognizer"]
+- ["Ps8Hashable", "UIView"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addGestureRecognizer"]
+- !private ["Ps8Hashable", "addSubview"]
+- !private ["Ps8Hashable", "addTarget"]
+- !private ["Ps8Hashable", "alpha"]
+- ["Ps8Hashable", "bundle"]
+- ["Ps8Hashable", "canvas"]
+- !private ["Ps8Hashable", "convertRect"]
+- ["Ps8Hashable", "convertRectToCanvas"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "frame"]
+- ["Ps8Hashable", "gestureRecognizer"]
+- ["Ps8Hashable", "gestureRecognizerShouldBegin"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "locationInView"]
+- ["Ps8Hashable", "longPressGestureRecogniser"]
+- !private ["Ps8Hashable", "minimumPressDuration"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "removeFromSuperview"]
+- !private ["Ps8Hashable", "state"]
+- !private ["Ps8Hashable", "superview"]
+- !private ["Ps8Hashable", "tag"]
+- ["Ps8Hashable", "updateForLongPress"]
+- !private ["Ps8Hashable", "view"]
+- ["Ps8Hashable", "views"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "filter"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "AnyObject"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "Bool"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "Bundle"]
+- !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "CGFloat"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "CGPoint"]
+- !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "CGPointMake"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "CGPointZero"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "CGRect"]
+- !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "CGRectIntersection"]
+- !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "KDDragAndDropManager"]
+- !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "KDDraggable"]
+- !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "KDDroppable"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "UIGestureRecognizer"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "UILongPressGestureRecognizer"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "UITouch"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "UIView"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "Void"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "bundle"]
+- !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "canvas"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "convertRectToCanvas"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "deinit"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "gestureRecognizer"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "gestureRecognizerShouldBegin"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "init"]
+- !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "longPressGestureRecogniser"]
+- !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "print"]
+- ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "updateForLongPress"]
+- !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "views"]
+- ["P28KDDragAndDropCollectionViews11KDDraggable", "AnyObject"]
+- ["P28KDDragAndDropCollectionViews11KDDraggable", "Bool"]
+- ["P28KDDragAndDropCollectionViews11KDDraggable", "CGPoint"]
+- ["P28KDDragAndDropCollectionViews11KDDraggable", "UIView"]
+- ["P28KDDragAndDropCollectionViews11KDDraggable", "Void"]
+- ["P28KDDragAndDropCollectionViews11KDDraggable", "canDragAtPoint"]
+- ["P28KDDragAndDropCollectionViews11KDDraggable", "dataItemAtPoint"]
+- ["P28KDDragAndDropCollectionViews11KDDraggable", "dragDataItem"]
+- ["P28KDDragAndDropCollectionViews11KDDraggable", "representationImageAtPoint"]
+- ["P28KDDragAndDropCollectionViews11KDDraggable", "startDraggingAtPoint"]
+- ["P28KDDragAndDropCollectionViews11KDDraggable", "stopDragging"]
+- ["P28KDDragAndDropCollectionViews11KDDroppable", "AnyObject"]
+- ["P28KDDragAndDropCollectionViews11KDDroppable", "Bool"]
+- ["P28KDDragAndDropCollectionViews11KDDroppable", "CGRect"]
+- ["P28KDDragAndDropCollectionViews11KDDroppable", "Void"]
+- ["P28KDDragAndDropCollectionViews11KDDroppable", "canDropAtRect"]
+- ["P28KDDragAndDropCollectionViews11KDDroppable", "didMoveItem"]
+- ["P28KDDragAndDropCollectionViews11KDDroppable", "didMoveOutItem"]
+- ["P28KDDragAndDropCollectionViews11KDDroppable", "dropDataItem"]
+- ["P28KDDragAndDropCollectionViews11KDDroppable", "willMoveItem"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "filter"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "filter"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "filter"]
+- !private ["PSo8NSCoding", "addGestureRecognizer"]
+- !private ["PSo8NSCoding", "addSubview"]
+- !private ["PSo8NSCoding", "alpha"]
+- !private ["PSo8NSCoding", "convertRect"]
+- !private ["PSo8NSCoding", "frame"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "removeFromSuperview"]
+- !private ["PSo8NSCoding", "superview"]
+- !private ["PSo8NSCoding", "tag"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "Bundle"]
+- !private ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "CGPoint"]
+- !private ["CSo8NSObject", "CGPointMake"]
+- ["CSo8NSObject", "CGPointZero"]
+- ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "CGRectIntersection"]
+- !private ["CSo8NSObject", "KDDragAndDropManager"]
+- !private ["CSo8NSObject", "KDDraggable"]
+- !private ["CSo8NSObject", "KDDroppable"]
+- ["CSo8NSObject", "UIGestureRecognizer"]
+- ["CSo8NSObject", "UILongPressGestureRecognizer"]
+- ["CSo8NSObject", "UITouch"]
+- ["CSo8NSObject", "UIView"]
+- ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "addGestureRecognizer"]
+- !private ["CSo8NSObject", "addSubview"]
+- !private ["CSo8NSObject", "addTarget"]
+- !private ["CSo8NSObject", "alpha"]
+- ["CSo8NSObject", "bundle"]
+- ["CSo8NSObject", "canvas"]
+- !private ["CSo8NSObject", "convertRect"]
+- ["CSo8NSObject", "convertRectToCanvas"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "gestureRecognizer"]
+- ["CSo8NSObject", "gestureRecognizerShouldBegin"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "locationInView"]
+- ["CSo8NSObject", "longPressGestureRecogniser"]
+- !private ["CSo8NSObject", "minimumPressDuration"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "removeFromSuperview"]
+- !private ["CSo8NSObject", "state"]
+- !private ["CSo8NSObject", "superview"]
+- !private ["CSo8NSObject", "tag"]
+- ["CSo8NSObject", "updateForLongPress"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "views"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "Bundle"]
+- !private ["PSo16NSObjectProtocol", "CGPointMake"]
+- ["PSo16NSObjectProtocol", "CGPointZero"]
+- !private ["PSo16NSObjectProtocol", "CGRectIntersection"]
+- !private ["PSo16NSObjectProtocol", "KDDragAndDropManager"]
+- ["PSo16NSObjectProtocol", "UILongPressGestureRecognizer"]
+- ["PSo16NSObjectProtocol", "UIView"]
+- !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "addSubview"]
+- !private ["PSo16NSObjectProtocol", "addTarget"]
+- !private ["PSo16NSObjectProtocol", "alpha"]
+- ["PSo16NSObjectProtocol", "bundle"]
+- ["PSo16NSObjectProtocol", "canvas"]
+- !private ["PSo16NSObjectProtocol", "convertRect"]
+- ["PSo16NSObjectProtocol", "convertRectToCanvas"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "gestureRecognizer"]
+- ["PSo16NSObjectProtocol", "gestureRecognizerShouldBegin"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "locationInView"]
+- ["PSo16NSObjectProtocol", "longPressGestureRecogniser"]
+- !private ["PSo16NSObjectProtocol", "minimumPressDuration"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "removeFromSuperview"]
+- !private ["PSo16NSObjectProtocol", "state"]
+- !private ["PSo16NSObjectProtocol", "superview"]
+- !private ["PSo16NSObjectProtocol", "tag"]
+- ["PSo16NSObjectProtocol", "updateForLongPress"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "views"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "filter"]
+- ["Ps16RawRepresentable", "Began"]
+- ["Ps16RawRepresentable", "Changed"]
+- ["Ps16RawRepresentable", "Ended"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "filter"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Vs12StaticString", "deinit"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
+- !private ["PSo29UIAccessibilityIdentification", "addSubview"]
+- !private ["PSo29UIAccessibilityIdentification", "alpha"]
+- !private ["PSo29UIAccessibilityIdentification", "convertRect"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
+- !private ["PSo29UIAccessibilityIdentification", "superview"]
+- !private ["PSo29UIAccessibilityIdentification", "tag"]
+- !private ["PSo12UIAppearance", "addGestureRecognizer"]
+- !private ["PSo12UIAppearance", "addSubview"]
+- !private ["PSo12UIAppearance", "alpha"]
+- !private ["PSo12UIAppearance", "convertRect"]
+- !private ["PSo12UIAppearance", "frame"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "removeFromSuperview"]
+- !private ["PSo12UIAppearance", "superview"]
+- !private ["PSo12UIAppearance", "tag"]
+- !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
+- !private ["PSo21UIAppearanceContainer", "addSubview"]
+- !private ["PSo21UIAppearanceContainer", "alpha"]
+- !private ["PSo21UIAppearanceContainer", "convertRect"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "removeFromSuperview"]
+- !private ["PSo21UIAppearanceContainer", "superview"]
+- !private ["PSo21UIAppearanceContainer", "tag"]
+- !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
+- !private ["PSo17UICoordinateSpace", "addSubview"]
+- !private ["PSo17UICoordinateSpace", "alpha"]
+- !private ["PSo17UICoordinateSpace", "convertRect"]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
+- !private ["PSo17UICoordinateSpace", "superview"]
+- !private ["PSo17UICoordinateSpace", "tag"]
+- !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
+- !private ["PSo13UIDynamicItem", "addSubview"]
+- !private ["PSo13UIDynamicItem", "alpha"]
+- !private ["PSo13UIDynamicItem", "convertRect"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "removeFromSuperview"]
+- !private ["PSo13UIDynamicItem", "superview"]
+- !private ["PSo13UIDynamicItem", "tag"]
+- !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
+- !private ["PSo18UIFocusEnvironment", "addSubview"]
+- !private ["PSo18UIFocusEnvironment", "alpha"]
+- !private ["PSo18UIFocusEnvironment", "convertRect"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "removeFromSuperview"]
+- !private ["PSo18UIFocusEnvironment", "superview"]
+- !private ["PSo18UIFocusEnvironment", "tag"]
+- !private ["CSo19UIGestureRecognizer", "addTarget"]
+- !private ["CSo19UIGestureRecognizer", "delegate"]
+- ["CSo19UIGestureRecognizer", "init"]
+- !private ["CSo19UIGestureRecognizer", "locationInView"]
+- !private ["CSo19UIGestureRecognizer", "minimumPressDuration"]
+- !private ["CSo19UIGestureRecognizer", "state"]
+- !private ["CSo19UIGestureRecognizer", "view"]
+- !private ["PSo27UIGestureRecognizerDelegate", "Bundle"]
+- !private ["PSo27UIGestureRecognizerDelegate", "CGPointMake"]
+- ["PSo27UIGestureRecognizerDelegate", "CGPointZero"]
+- !private ["PSo27UIGestureRecognizerDelegate", "CGRectIntersection"]
+- !private ["PSo27UIGestureRecognizerDelegate", "KDDragAndDropManager"]
+- ["PSo27UIGestureRecognizerDelegate", "UILongPressGestureRecognizer"]
+- ["PSo27UIGestureRecognizerDelegate", "UIView"]
+- !private ["PSo27UIGestureRecognizerDelegate", "bundle"]
+- !private ["PSo27UIGestureRecognizerDelegate", "canvas"]
+- !private ["PSo27UIGestureRecognizerDelegate", "convertRectToCanvas"]
+- ["PSo27UIGestureRecognizerDelegate", "gestureRecognizer"]
+- ["PSo27UIGestureRecognizerDelegate", "gestureRecognizerShouldBegin"]
+- !private ["PSo27UIGestureRecognizerDelegate", "longPressGestureRecogniser"]
+- !private ["PSo27UIGestureRecognizerDelegate", "print"]
+- !private ["PSo27UIGestureRecognizerDelegate", "updateForLongPress"]
+- !private ["PSo27UIGestureRecognizerDelegate", "views"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["OSC24UIGestureRecognizerState", "Began"]
+- ["OSC24UIGestureRecognizerState", "Changed"]
+- ["OSC24UIGestureRecognizerState", "Ended"]
+- !private ["CSo28UILongPressGestureRecognizer", "addTarget"]
+- !private ["CSo28UILongPressGestureRecognizer", "delegate"]
+- ["CSo28UILongPressGestureRecognizer", "init"]
+- !private ["CSo28UILongPressGestureRecognizer", "locationInView"]
+- !private ["CSo28UILongPressGestureRecognizer", "minimumPressDuration"]
+- !private ["CSo28UILongPressGestureRecognizer", "state"]
+- !private ["CSo28UILongPressGestureRecognizer", "view"]
+- !private ["CSo11UIResponder", "addGestureRecognizer"]
+- !private ["CSo11UIResponder", "addSubview"]
+- !private ["CSo11UIResponder", "alpha"]
+- !private ["CSo11UIResponder", "convertRect"]
+- !private ["CSo11UIResponder", "deinit"]
+- !private ["CSo11UIResponder", "frame"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "removeFromSuperview"]
+- !private ["CSo11UIResponder", "superview"]
+- !private ["CSo11UIResponder", "tag"]
+- !private ["CSo7UITouch", "locationInView"]
+- !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
+- !private ["PSo18UITraitEnvironment", "addSubview"]
+- !private ["PSo18UITraitEnvironment", "alpha"]
+- !private ["PSo18UITraitEnvironment", "convertRect"]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "removeFromSuperview"]
+- !private ["PSo18UITraitEnvironment", "superview"]
+- !private ["PSo18UITraitEnvironment", "tag"]
+- !private ["CSo6UIView", "addGestureRecognizer"]
+- !private ["CSo6UIView", "addSubview"]
+- !private ["CSo6UIView", "alpha"]
+- !private ["CSo6UIView", "convertRect"]
+- !private ["CSo6UIView", "deinit"]
+- !private ["CSo6UIView", "frame"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "removeFromSuperview"]
+- !private ["CSo6UIView", "superview"]
+- !private ["CSo6UIView", "tag"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "filter"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "filter"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "filter"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "addGestureRecognizer"]
+- !private ["Ps12_Reflectable", "addSubview"]
+- !private ["Ps12_Reflectable", "alpha"]
+- !private ["Ps12_Reflectable", "convertRect"]
+- !private ["Ps12_Reflectable", "filter"]
+- !private ["Ps12_Reflectable", "frame"]
+- !private ["Ps12_Reflectable", "height"]
+- ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "origin"]
+- !private ["Ps12_Reflectable", "removeFromSuperview"]
+- !private ["Ps12_Reflectable", "size"]
+- !private ["Ps12_Reflectable", "superview"]
+- !private ["Ps12_Reflectable", "tag"]
+- !private ["Ps12_Reflectable", "width"]
+- !private ["Ps12_Reflectable", "x"]
+- !private ["Ps12_Reflectable", "y"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC7CGPoint"
+- !private "VSC6CGRect"
+- !private "VSC6CGSize"
+- "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- "C28KDDragAndDropCollectionViews20KDDragAndDropManager"
+- "P28KDDragAndDropCollectionViews11KDDraggable"
+- "P28KDDragAndDropCollectionViews11KDDroppable"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "Ps16OutputStreamType"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps30RangeReplaceableCollectionType"
+- "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Vs12StaticString"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo19UIGestureRecognizer"
+- "PSo27UIGestureRecognizerDelegate"
+- "OSC24UIGestureRecognizerState"
+- "CSo28UILongPressGestureRecognizer"
+- "CSo11UIResponder"
+- !private "CSo7UITouch"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "355114f0de74290dacf38d62c7f323cf"
