@@ -9,10 +9,31 @@
 import UIKit
 
 @objc protocol KDDraggable {
+    /**
+     点击的部位是否是 item
+     
+     - parameter point:
+     
+     - returns:
+     */
     func canDragAtPoint(point : CGPoint) -> Bool
+    /**
+     貌似直接生成 item 图片
+     
+     - parameter point: point
+     
+     - returns: image
+     */
     func representationImageAtPoint(point : CGPoint) -> UIView?
     func dataItemAtPoint(point : CGPoint) -> AnyObject?
     func dragDataItem(item : AnyObject) -> Void
+    /**
+     记录item的 indexpath
+     
+     - parameter point: <#point description#>
+     
+     - returns: <#return value description#>
+     */
     optional func startDraggingAtPoint(point : CGPoint) -> Void
     optional func stopDragging() -> Void
 }
@@ -56,23 +77,24 @@ class KDDragAndDropManager: NSObject, UIGestureRecognizerDelegate {
         self.views = collectionViews
     }
     
+    // 手势开始响应
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
         
         
         for view in self.views.filter({ v -> Bool in v is KDDraggable})  {
             
                 let draggable = view as! KDDraggable
-                
+                // collection 上的点
                 let touchPointInView = touch.locationInView(view)
-                
+            
                 if draggable.canDragAtPoint(touchPointInView) == true {
                     
                     if let representation = draggable.representationImageAtPoint(touchPointInView) {
-                        
+                        // 原来的frame 转到新的 view 里的 frame 坐标位置
                         representation.frame = self.canvas.convertRect(representation.frame, fromView: view)
                         
                         representation.alpha = 0.7
-                        
+                        // canvas 上的 点
                         let pointOnCanvas = touch.locationInView(self.canvas)
                         
                         let offset = CGPointMake(pointOnCanvas.x - representation.frame.origin.x, pointOnCanvas.y - representation.frame.origin.y)
@@ -118,11 +140,12 @@ class KDDragAndDropManager: NSObject, UIGestureRecognizerDelegate {
                 
                 
             case .Began :
+                print("gesture begin")
                 self.canvas.addSubview(bundl.representationImageView)
                 sourceDraggable.startDraggingAtPoint?(pointOnSourceDraggable)
                 
             case .Changed :
-                
+                print("change")
                 // Update the frame of the representation image
                 var repImgFrame = bundl.representationImageView.frame
                 repImgFrame.origin = CGPointMake(pointOnCanvas.x - bundl.offset.x, pointOnCanvas.y - bundl.offset.y);
@@ -133,8 +156,10 @@ class KDDragAndDropManager: NSObject, UIGestureRecognizerDelegate {
                 var mainOverView : UIView?
                 
                 for view in self.views.filter({ v -> Bool in v is KDDroppable }) {
-                 
+                    
                     let viewFrameOnCanvas = self.convertRectToCanvas(view.frame, fromView: view)
+                    
+                    print("image begin ", NSStringFromCGPoint(viewFrameOnCanvas.origin),NSStringFromCGSize(viewFrameOnCanvas.size))
                     
                     
                     /*                ┌────────┐   ┌────────────┐
@@ -186,7 +211,7 @@ class KDDragAndDropManager: NSObject, UIGestureRecognizerDelegate {
                 
                
             case .Ended :
-                
+                print("end")
                 if bundl.sourceDraggableView != bundl.overDroppableView { // if we are actually dropping over a new view.
                     
                     print("\(bundl.overDroppableView?.tag)")

@@ -53,6 +53,13 @@ class KDDragAndDropCollectionView: UICollectionView, KDDraggable, KDDroppable {
         return self.indexPathForItemAtPoint(point) != nil
     }
     
+    /**
+     貌似直接生成 item 图片
+     
+     - parameter point: point
+     
+     - returns: image
+     */
     func representationImageAtPoint(point : CGPoint) -> UIView? {
         
         var imageView : UIView?
@@ -133,8 +140,7 @@ class KDDragAndDropCollectionView: UICollectionView, KDDraggable, KDDroppable {
                         self.animating = false
                         
                         self.reloadData()
-                        
-                        
+
                 })
                 
                 

@@ -73,6 +73,8 @@ class ViewController: UIViewController, KDDragAndDropCollectionViewDataSource {
     // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
+        print("cell");
+        
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! ColorCell
         
         let dataItem = data[collectionView.tag][indexPath.item]

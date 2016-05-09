@@ -10,45 +10,46 @@ provides-member:
 - ["C28KDDragAndDropCollectionViews8DataItem", ""]
 - ["C28KDDragAndDropCollectionViews14ViewController", ""]
 provides-dynamic-lookup:
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
+- "thirdCollectionView"
+- "dragAndDropManager"
 - "viewDidLoad"
 - "firstCollectionView"
-- "dragAndDropManager"
-- "thirdCollectionView"
 - "secondCollectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
 depends-top-level:
-- !private "ColorCell"
-- !private "KDDragAndDropCollectionView"
-- "UICollectionView"
-- "String"
-- !private "/"
-- "Void"
-- "Equatable"
-- "StringLiteralType"
-- "=="
-- !private "+"
-- "UIViewController"
-- "UICollectionViewCell"
-- "KDDragAndDropManager"
-- "Int"
+- !private "BooleanLiteralType"
 - "NSIndexPath"
 - !private "Array"
-- !private "..."
-- "DataItem"
-- "UIColor"
-- "KDDragAndDropCollectionViewDataSource"
-- "ViewController"
-- !private "&&"
-- !private "BooleanLiteralType"
-- "Bool"
-- !private "UnicodeScalarType"
+- "KDDragAndDropManager"
 - "AnyObject"
+- !private "ColorCell"
+- "KDDragAndDropCollectionViewDataSource"
+- "DataItem"
+- "String"
+- "UIViewController"
+- "UICollectionViewCell"
+- !private "print"
+- !private "/"
+- "Equatable"
+- "Bool"
+- !private "KDDragAndDropCollectionView"
+- "UIColor"
+- "UICollectionView"
+- "Int"
+- !private "+"
+- "StringLiteralType"
+- "=="
+- "ViewController"
+- "Void"
+- !private "UnicodeScalarType"
+- !private "&&"
+- !private "..."
 depends-member:
 - ["Ps9AnyObject", "DataItem"]
 - !private ["Ps9AnyObject", "KDDragAndDropManager"]
@@ -70,6 +71,7 @@ depends-member:
 - !private ["Ps9AnyObject", "item"]
 - !private ["Ps9AnyObject", "label"]
 - ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
+- !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "secondCollectionView"]
 - !private ["Ps9AnyObject", "tag"]
 - !private ["Ps9AnyObject", "text"]
@@ -135,6 +137,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "item"]
 - !private ["Ps11CVarArgType", "label"]
 - ["Ps11CVarArgType", "numberOfSectionsInCollectionView"]
+- !private ["Ps11CVarArgType", "print"]
 - ["Ps11CVarArgType", "secondCollectionView"]
 - !private ["Ps11CVarArgType", "tag"]
 - !private ["Ps11CVarArgType", "text"]
@@ -190,6 +193,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "item"]
 - !private ["Ps28CustomDebugStringConvertible", "label"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "removeAtIndex"]
 - ["Ps28CustomDebugStringConvertible", "secondCollectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -230,6 +234,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "item"]
 - !private ["Ps23CustomStringConvertible", "label"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
+- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "removeAtIndex"]
 - ["Ps23CustomStringConvertible", "secondCollectionView"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -270,6 +275,7 @@ depends-member:
 - !private ["Ps9Equatable", "item"]
 - !private ["Ps9Equatable", "label"]
 - ["Ps9Equatable", "numberOfSectionsInCollectionView"]
+- !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "secondCollectionView"]
 - !private ["Ps9Equatable", "tag"]
 - !private ["Ps9Equatable", "text"]
@@ -304,6 +310,7 @@ depends-member:
 - !private ["Ps8Hashable", "item"]
 - !private ["Ps8Hashable", "label"]
 - ["Ps8Hashable", "numberOfSectionsInCollectionView"]
+- !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "secondCollectionView"]
 - !private ["Ps8Hashable", "tag"]
 - !private ["Ps8Hashable", "text"]
@@ -348,6 +355,7 @@ depends-member:
 - !private ["P28KDDragAndDropCollectionViews37KDDragAndDropCollectionViewDataSource", "dragAndDropManager"]
 - !private ["P28KDDragAndDropCollectionViews37KDDragAndDropCollectionViewDataSource", "firstCollectionView"]
 - ["P28KDDragAndDropCollectionViews37KDDragAndDropCollectionViewDataSource", "numberOfSectionsInCollectionView"]
+- !private ["P28KDDragAndDropCollectionViews37KDDragAndDropCollectionViewDataSource", "print"]
 - !private ["P28KDDragAndDropCollectionViews37KDDragAndDropCollectionViewDataSource", "secondCollectionView"]
 - !private ["P28KDDragAndDropCollectionViews37KDDragAndDropCollectionViewDataSource", "thirdCollectionView"]
 - !private ["P28KDDragAndDropCollectionViews37KDDragAndDropCollectionViewDataSource", "view"]
@@ -413,6 +421,7 @@ depends-member:
 - !private ["PSo8NSCoding", "item"]
 - !private ["PSo8NSCoding", "label"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
+- !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "secondCollectionView"]
 - !private ["PSo8NSCoding", "tag"]
 - !private ["PSo8NSCoding", "text"]
@@ -434,6 +443,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "firstCollectionView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInCollectionView"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "secondCollectionView"]
 - ["PSo26NSExtensionRequestHandling", "thirdCollectionView"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
@@ -466,6 +476,7 @@ depends-member:
 - !private ["CSo8NSObject", "item"]
 - !private ["CSo8NSObject", "label"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
+- !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "secondCollectionView"]
 - !private ["CSo8NSObject", "tag"]
 - !private ["CSo8NSObject", "text"]
@@ -490,6 +501,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "item"]
 - !private ["PSo16NSObjectProtocol", "label"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "secondCollectionView"]
 - !private ["PSo16NSObjectProtocol", "tag"]
 - !private ["PSo16NSObjectProtocol", "text"]
@@ -579,6 +591,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "label"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInCollectionView"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "secondCollectionView"]
 - !private ["PSo21UIAppearanceContainer", "tag"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -607,6 +620,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "dragAndDropManager"]
 - !private ["PSo26UICollectionViewDataSource", "firstCollectionView"]
 - ["PSo26UICollectionViewDataSource", "numberOfSectionsInCollectionView"]
+- !private ["PSo26UICollectionViewDataSource", "print"]
 - !private ["PSo26UICollectionViewDataSource", "secondCollectionView"]
 - !private ["PSo26UICollectionViewDataSource", "thirdCollectionView"]
 - !private ["PSo26UICollectionViewDataSource", "view"]
@@ -624,6 +638,7 @@ depends-member:
 - ["PSo18UIContentContainer", "firstCollectionView"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "numberOfSectionsInCollectionView"]
+- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "secondCollectionView"]
 - ["PSo18UIContentContainer", "thirdCollectionView"]
 - !private ["PSo18UIContentContainer", "view"]
@@ -659,6 +674,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "label"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInCollectionView"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "secondCollectionView"]
 - !private ["PSo18UIFocusEnvironment", "tag"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -691,6 +707,7 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "label"]
 - ["CSo11UIResponder", "numberOfSectionsInCollectionView"]
+- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "secondCollectionView"]
 - !private ["CSo11UIResponder", "tag"]
 - !private ["CSo11UIResponder", "text"]
@@ -711,6 +728,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "firstCollectionView"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInCollectionView"]
+- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "secondCollectionView"]
 - ["PSo16UIStateRestoring", "thirdCollectionView"]
 - !private ["PSo16UIStateRestoring", "view"]
@@ -732,6 +750,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "label"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInCollectionView"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "secondCollectionView"]
 - !private ["PSo18UITraitEnvironment", "tag"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -764,6 +783,7 @@ depends-member:
 - ["CSo16UIViewController", "firstCollectionView"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "numberOfSectionsInCollectionView"]
+- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "secondCollectionView"]
 - ["CSo16UIViewController", "thirdCollectionView"]
 - !private ["CSo16UIViewController", "view"]
@@ -789,6 +809,7 @@ depends-member:
 - ["C28KDDragAndDropCollectionViews14ViewController", "firstCollectionView"]
 - ["C28KDDragAndDropCollectionViews14ViewController", "init"]
 - ["C28KDDragAndDropCollectionViews14ViewController", "numberOfSectionsInCollectionView"]
+- !private ["C28KDDragAndDropCollectionViews14ViewController", "print"]
 - ["C28KDDragAndDropCollectionViews14ViewController", "secondCollectionView"]
 - ["C28KDDragAndDropCollectionViews14ViewController", "thirdCollectionView"]
 - !private ["C28KDDragAndDropCollectionViews14ViewController", "view"]

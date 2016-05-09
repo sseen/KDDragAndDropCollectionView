@@ -139,11 +139,29 @@ SWIFT_PROTOCOL("_TtP28KDDragAndDropCollectionViews11KDDroppable_")
 
 SWIFT_PROTOCOL("_TtP28KDDragAndDropCollectionViews11KDDraggable_")
 @protocol KDDraggable
+
+/// 点击的部位是否是 item
+///
+/// \param point 
+///
+/// \returns  
 - (BOOL)canDragAtPoint:(CGPoint)point;
+
+/// 貌似直接生成 item 图片
+///
+/// \param point point
+///
+/// \returns  image
 - (UIView * _Nullable)representationImageAtPoint:(CGPoint)point;
 - (id _Nullable)dataItemAtPoint:(CGPoint)point;
 - (void)dragDataItem:(id _Nonnull)item;
 @optional
+
+/// 记录item的 indexpath
+///
+/// \param point <#point description#>
+///
+/// \returns  <#return value description#>
 - (void)startDraggingAtPoint:(CGPoint)point;
 - (void)stopDragging;
 @end
@@ -162,6 +180,12 @@ SWIFT_CLASS("_TtC28KDDragAndDropCollectionViews27KDDragAndDropCollectionView")
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)canDragAtPoint:(CGPoint)point;
+
+/// 貌似直接生成 item 图片
+///
+/// \param point point
+///
+/// \returns  image
 - (UIView * _Nullable)representationImageAtPoint:(CGPoint)point;
 - (id _Nullable)dataItemAtPoint:(CGPoint)point;
 - (void)startDraggingAtPoint:(CGPoint)point;
