@@ -14,48 +14,48 @@ provides-member:
 - ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", ""]
 - ["VC28KDDragAndDropCollectionViews20KDDragAndDropManager6Bundle", ""]
 provides-dynamic-lookup:
+- "gestureRecognizer"
+- "didMoveItem"
+- "dataItemAtPoint"
+- "willMoveItem"
+- "startDraggingAtPoint"
+- "dropDataItem"
+- "didMoveOutItem"
+- "updateForLongPress"
+- "dragDataItem"
 - "stopDragging"
 - "canDragAtPoint"
-- "representationImageAtPoint"
-- "dragDataItem"
-- "canDropAtRect"
-- "dataItemAtPoint"
-- "startDraggingAtPoint"
-- "updateForLongPress"
-- "dropDataItem"
 - "convertRectToCanvas"
-- "willMoveItem"
-- "didMoveItem"
-- "gestureRecognizer"
-- "didMoveOutItem"
+- "representationImageAtPoint"
+- "canDropAtRect"
 depends-top-level:
-- !private "!="
-- !private "BooleanLiteralType"
-- "UIView"
-- "UIGestureRecognizerDelegate"
-- "KDDragAndDropManager"
-- "CGPointZero"
-- !private "NSStringFromCGPoint"
-- "UIGestureRecognizer"
-- !private "print"
-- !private "-"
-- "CGPoint"
-- !private "NSStringFromCGSize"
-- !private "CGRectIntersection"
 - "KDDraggable"
-- !private "StringLiteralType"
 - "KDDroppable"
+- "Void"
+- "UIGestureRecognizerDelegate"
+- !private "NSStringFromCGRect"
+- !private "NSStringFromCGSize"
+- "NSObject"
 - "Bool"
 - "CGRect"
-- "UILongPressGestureRecognizer"
-- "NSObject"
-- !private "CGPointMake"
+- !private "-"
+- !private "BooleanLiteralType"
+- "KDDragAndDropManager"
+- !private "!="
+- "UIView"
 - !private "CGFloat"
+- "CGPoint"
+- !private "CGPointMake"
+- !private "print"
 - !private "=="
-- !private "+="
+- !private "CGRectIntersection"
+- "CGPointZero"
 - "AnyObject"
+- "UIGestureRecognizer"
+- "UILongPressGestureRecognizer"
 - "UITouch"
-- "Void"
+- !private "StringLiteralType"
+- !private "+="
 - !private "*"
 - !private ">"
 depends-member:
@@ -64,7 +64,7 @@ depends-member:
 - ["Ps9AnyObject", "CGPointZero"]
 - !private ["Ps9AnyObject", "CGRectIntersection"]
 - !private ["Ps9AnyObject", "KDDragAndDropManager"]
-- !private ["Ps9AnyObject", "NSStringFromCGPoint"]
+- !private ["Ps9AnyObject", "NSStringFromCGRect"]
 - !private ["Ps9AnyObject", "NSStringFromCGSize"]
 - ["Ps9AnyObject", "UILongPressGestureRecognizer"]
 - ["Ps9AnyObject", "UIView"]
@@ -138,7 +138,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "KDDragAndDropManager"]
-- !private ["Ps11CVarArgType", "NSStringFromCGPoint"]
+- !private ["Ps11CVarArgType", "NSStringFromCGRect"]
 - !private ["Ps11CVarArgType", "NSStringFromCGSize"]
 - ["Ps11CVarArgType", "UILongPressGestureRecognizer"]
 - ["Ps11CVarArgType", "UIView"]
@@ -183,7 +183,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "KDDragAndDropManager"]
-- !private ["Ps28CustomDebugStringConvertible", "NSStringFromCGPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "NSStringFromCGRect"]
 - !private ["Ps28CustomDebugStringConvertible", "NSStringFromCGSize"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
@@ -225,7 +225,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "KDDragAndDropManager"]
-- !private ["Ps23CustomStringConvertible", "NSStringFromCGPoint"]
+- !private ["Ps23CustomStringConvertible", "NSStringFromCGRect"]
 - !private ["Ps23CustomStringConvertible", "NSStringFromCGSize"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - ["Ps23CustomStringConvertible", "UILongPressGestureRecognizer"]
@@ -269,7 +269,7 @@ depends-member:
 - ["Ps9Equatable", "Ended"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "KDDragAndDropManager"]
-- !private ["Ps9Equatable", "NSStringFromCGPoint"]
+- !private ["Ps9Equatable", "NSStringFromCGRect"]
 - !private ["Ps9Equatable", "NSStringFromCGSize"]
 - ["Ps9Equatable", "UILongPressGestureRecognizer"]
 - ["Ps9Equatable", "UIView"]
@@ -320,7 +320,7 @@ depends-member:
 - ["Ps8Hashable", "Ended"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "KDDragAndDropManager"]
-- !private ["Ps8Hashable", "NSStringFromCGPoint"]
+- !private ["Ps8Hashable", "NSStringFromCGRect"]
 - !private ["Ps8Hashable", "NSStringFromCGSize"]
 - ["Ps8Hashable", "UILongPressGestureRecognizer"]
 - ["Ps8Hashable", "UIView"]
@@ -381,7 +381,7 @@ depends-member:
 - !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "KDDragAndDropManager"]
 - !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "KDDraggable"]
 - !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "KDDroppable"]
-- !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "NSStringFromCGPoint"]
+- !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "NSStringFromCGRect"]
 - !private ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "NSStringFromCGSize"]
 - ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "UIGestureRecognizer"]
 - ["C28KDDragAndDropCollectionViews20KDDragAndDropManager", "UILongPressGestureRecognizer"]
@@ -460,7 +460,7 @@ depends-member:
 - !private ["CSo8NSObject", "KDDragAndDropManager"]
 - !private ["CSo8NSObject", "KDDraggable"]
 - !private ["CSo8NSObject", "KDDroppable"]
-- !private ["CSo8NSObject", "NSStringFromCGPoint"]
+- !private ["CSo8NSObject", "NSStringFromCGRect"]
 - !private ["CSo8NSObject", "NSStringFromCGSize"]
 - ["CSo8NSObject", "UIGestureRecognizer"]
 - ["CSo8NSObject", "UILongPressGestureRecognizer"]
@@ -498,7 +498,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "CGPointZero"]
 - !private ["PSo16NSObjectProtocol", "CGRectIntersection"]
 - !private ["PSo16NSObjectProtocol", "KDDragAndDropManager"]
-- !private ["PSo16NSObjectProtocol", "NSStringFromCGPoint"]
+- !private ["PSo16NSObjectProtocol", "NSStringFromCGRect"]
 - !private ["PSo16NSObjectProtocol", "NSStringFromCGSize"]
 - ["PSo16NSObjectProtocol", "UILongPressGestureRecognizer"]
 - ["PSo16NSObjectProtocol", "UIView"]
@@ -627,7 +627,7 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", "CGPointZero"]
 - !private ["PSo27UIGestureRecognizerDelegate", "CGRectIntersection"]
 - !private ["PSo27UIGestureRecognizerDelegate", "KDDragAndDropManager"]
-- !private ["PSo27UIGestureRecognizerDelegate", "NSStringFromCGPoint"]
+- !private ["PSo27UIGestureRecognizerDelegate", "NSStringFromCGRect"]
 - !private ["PSo27UIGestureRecognizerDelegate", "NSStringFromCGSize"]
 - ["PSo27UIGestureRecognizerDelegate", "UILongPressGestureRecognizer"]
 - ["PSo27UIGestureRecognizerDelegate", "UIView"]

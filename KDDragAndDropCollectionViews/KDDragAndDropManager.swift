@@ -98,7 +98,7 @@ class KDDragAndDropManager: NSObject, UIGestureRecognizerDelegate {
                         let pointOnCanvas = touch.locationInView(self.canvas)
                         
                         let offset = CGPointMake(pointOnCanvas.x - representation.frame.origin.x, pointOnCanvas.y - representation.frame.origin.y)
-                        
+                        print(pointOnCanvas, representation.frame, touchPointInView)
                         if let dataItem : AnyObject = draggable.dataItemAtPoint(touchPointInView) {
                             
                             self.bundle = Bundle(
@@ -145,7 +145,7 @@ class KDDragAndDropManager: NSObject, UIGestureRecognizerDelegate {
                 sourceDraggable.startDraggingAtPoint?(pointOnSourceDraggable)
                 
             case .Changed :
-                print("change")
+                print("change", pointOnCanvas)
                 // Update the frame of the representation image
                 var repImgFrame = bundl.representationImageView.frame
                 repImgFrame.origin = CGPointMake(pointOnCanvas.x - bundl.offset.x, pointOnCanvas.y - bundl.offset.y);
@@ -157,10 +157,10 @@ class KDDragAndDropManager: NSObject, UIGestureRecognizerDelegate {
                 
                 for view in self.views.filter({ v -> Bool in v is KDDroppable }) {
                     
+                    // 这一句话 纯 忽悠人感觉
                     let viewFrameOnCanvas = self.convertRectToCanvas(view.frame, fromView: view)
                     
-                    print("image begin ", NSStringFromCGPoint(viewFrameOnCanvas.origin),NSStringFromCGSize(viewFrameOnCanvas.size))
-                    
+                    print("image begin ", NSStringFromCGRect(viewFrameOnCanvas), NSStringFromCGRect(view.frame))
                     
                     /*                ┌────────┐   ┌────────────┐
                     *                 │       ┌┼───│Intersection│
@@ -170,14 +170,14 @@ class KDDragAndDropManager: NSObject, UIGestureRecognizerDelegate {
                     * ████████████████└────────┘████████████████
                     * ██████████████████████████████████████████
                     */
-                    
+                    // 生成的image 和 collectionview 重合部分 大小
                     let intersectionNew = CGRectIntersection(bundl.representationImageView.frame, viewFrameOnCanvas).size
                     
-                    
+                    // 又一个貌似没有用的 overlappingArea
                     if (intersectionNew.width * intersectionNew.height) > overlappingArea {
-                        
+                        print("image new ", NSStringFromCGSize(intersectionNew), view.tag,  overlappingArea)
                         overlappingArea = intersectionNew.width * intersectionNew.width
-                        
+                        // mainOverView 就是 拖动所在的 collection view
                         mainOverView = view
                     }
 
