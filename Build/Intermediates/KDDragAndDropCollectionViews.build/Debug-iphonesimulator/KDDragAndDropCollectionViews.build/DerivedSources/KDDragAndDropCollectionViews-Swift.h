@@ -128,8 +128,22 @@ SWIFT_CLASS("_TtC28KDDragAndDropCollectionViews9ColorCell")
 
 SWIFT_PROTOCOL("_TtP28KDDragAndDropCollectionViews11KDDroppable_")
 @protocol KDDroppable
+
+/// 拖动的overlapping 是不是和 cell 的重叠
+///
+/// \param rect 目前拖动的坐标
+///
+/// \returns  
 - (BOOL)canDropAtRect:(CGRect)rect;
 - (void)willMoveItem:(id _Nonnull)item inRect:(CGRect)rect;
+
+/// 移动cell，拖动还没离开原cell，不移动
+///
+/// \param item 原始的item
+///
+/// \param rect 目前拖动的坐标
+///
+/// \returns  
 - (void)didMoveItem:(id _Nonnull)item inRect:(CGRect)rect;
 - (void)didMoveOutItem:(id _Nonnull)item;
 - (void)dropDataItem:(id _Nonnull)item atRect:(CGRect)atRect;
@@ -192,6 +206,12 @@ SWIFT_CLASS("_TtC28KDDragAndDropCollectionViews27KDDragAndDropCollectionView")
 - (void)stopDragging;
 - (void)dragDataItem:(id _Nonnull)item;
 - (BOOL)canDropAtRect:(CGRect)rect;
+
+/// overlapping 目前遮住了哪个 cell
+///
+/// \param rect 
+///
+/// \returns  
 - (NSIndexPath * _Nullable)indexPathForCellOverlappingRect:(CGRect)rect;
 - (void)willMoveItem:(id _Nonnull)item inRect:(CGRect)rect;
 @property (nonatomic, readonly) BOOL isHorizontal;

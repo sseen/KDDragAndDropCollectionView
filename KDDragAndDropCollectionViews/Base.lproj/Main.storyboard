@@ -18,27 +18,27 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="02Q-nP-ygV" customClass="KDDragAndDropCollectionView" customModule="KDDragAndDropCollectionViews" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="60" width="414" height="127"/>
+                                <rect key="frame" x="0.0" y="60" width="414" height="200"/>
                                 <color key="backgroundColor" red="0.58431372549019611" green="0.58431372549019611" blue="0.58431372549019611" alpha="0.080000000000000002" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="127" id="hTY-pv-arw"/>
+                                    <constraint firstAttribute="height" constant="200" id="l0r-B6-aBC"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6L1-d8-Yr4">
-                                    <size key="itemSize" width="69" height="127"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6L1-d8-Yr4">
+                                    <size key="itemSize" width="69" height="30"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="0Gd-Ct-NcX" customClass="ColorCell" customModule="KDDragAndDropCollectionViews" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="69" height="127"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="69" height="127"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEu-N7-cWu">
-                                                    <rect key="frame" x="8" y="8" width="53" height="111"/>
+                                                    <rect key="frame" x="8" y="8" width="53" height="14"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" red="0.91358770718232041" green="0.91358770718232041" blue="0.91358770718232041" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -64,7 +64,7 @@
                                 </connections>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W0b-dH-TwB" customClass="KDDragAndDropCollectionView" customModule="KDDragAndDropCollectionViews" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="357" width="414" height="127"/>
+                                <rect key="frame" x="0.0" y="430" width="414" height="127"/>
                                 <color key="backgroundColor" red="0.58431372550000005" green="0.58431372550000005" blue="0.58431372550000005" alpha="0.080000000000000002" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="127" id="b2a-nb-sW7"/>
@@ -110,7 +110,7 @@
                                 </connections>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ulr-CP-X3q" customClass="KDDragAndDropCollectionView" customModule="KDDragAndDropCollectionViews" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="208" width="414" height="127"/>
+                                <rect key="frame" x="0.0" y="281" width="414" height="127"/>
                                 <color key="backgroundColor" red="0.58431372550000005" green="0.58431372550000005" blue="0.58431372550000005" alpha="0.080000000000000002" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="127" id="lIk-bs-4QU"/>

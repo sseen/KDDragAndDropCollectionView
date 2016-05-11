@@ -46,7 +46,7 @@ class ViewController: UIViewController, KDDragAndDropCollectionViewDataSource {
             
             var items = [DataItem]()
             
-            for j in 0...20 {
+            for j in 0...10 {
                 
                 
                 let dataItem = DataItem(indexes: String(i) + ":" + String(j), colour: colours[i])
@@ -72,8 +72,6 @@ class ViewController: UIViewController, KDDragAndDropCollectionViewDataSource {
     
     // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        
-        print("cell");
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! ColorCell
         

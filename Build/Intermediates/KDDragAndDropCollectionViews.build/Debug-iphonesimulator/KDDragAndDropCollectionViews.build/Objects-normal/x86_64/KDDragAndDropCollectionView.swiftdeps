@@ -9,79 +9,80 @@ provides-member:
 - ["P28KDDragAndDropCollectionViews37KDDragAndDropCollectionViewDataSource", ""]
 - ["C28KDDragAndDropCollectionViews27KDDragAndDropCollectionView", ""]
 provides-dynamic-lookup:
-- "dropDataItem"
+- "draggingPathOfCellBeingDragged"
+- "representationImageAtPoint"
+- "willMoveItem"
+- "indexPathForCellOverlappingRect"
+- "canDropAtRect"
+- "dataItemAtPoint"
+- "awakeFromNib"
 - "animating"
-- "iDelegate"
+- "startDraggingAtPoint"
 - "didMoveItem"
+- "paging"
 - "checkForEdgesAndScroll"
 - "didMoveOutItem"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "iDataSource"
-- "draggingPathOfCellBeingDragged"
-- "isHorizontal"
-- "awakeFromNib"
-- "canDragAtPoint"
-- "canDropAtRect"
-- "representationImageAtPoint"
-- "stopDragging"
-- "indexPathForCellOverlappingRect"
-- "willMoveItem"
-- "dataItemAtPoint"
 - "dragDataItem"
-- "startDraggingAtPoint"
-- "paging"
+- "iDelegate"
+- "dropDataItem"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "stopDragging"
+- "iDataSource"
+- "canDragAtPoint"
+- "isHorizontal"
 depends-top-level:
-- !private "=="
-- "Bool"
-- "UIView"
-- !private "-"
+- !private "UIGraphicsBeginImageContextWithOptions"
 - !private "<"
+- !private "DISPATCH_TIME_NOW"
+- "UICollectionViewDataSource"
+- !private "Int64"
+- "AnyObject"
+- "NSCoder"
+- "KDDragAndDropCollectionViewDataSource"
+- !private "print"
+- !private "-"
+- !private "=="
+- "KDDraggable"
+- "KDDroppable"
+- !private "dispatch_time"
+- "UICollectionViewDelegate"
+- "UIView"
 - "KDDragAndDropCollectionView"
-- !private "Double"
-- "CGPoint"
-- !private "UIGraphicsGetCurrentContext"
-- !private "UIImageView"
 - "BooleanLiteralType"
+- "Void"
+- !private "*"
+- !private "UIGraphicsGetCurrentContext"
+- !private "Array"
+- "NSIndexPath"
+- !private "CGRectIntersectsRect"
 - !private "||"
 - !private "!"
-- !private "dispatch_time"
-- !private "dispatch_get_main_queue"
+- !private "dispatch_after"
+- "UICollectionViewLayout"
+- !private "UICollectionViewFlowLayout"
+- !private "+="
+- "CGRect"
+- "Bool"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "UICollectionViewCell"
+- !private ">"
+- !private "CGRectIntersection"
 - "UICollectionView"
 - !private "CGFloat"
-- !private "Int64"
-- !private "UIGraphicsEndImageContext"
 - !private "-="
-- !private "DISPATCH_TIME_NOW"
-- !private "dispatch_after"
-- "Void"
-- !private "+="
-- !private "CGRectIntersectsRect"
-- !private "&&"
-- !private "*"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
-- !private "UIGraphicsBeginImageContextWithOptions"
-- !private "Array"
-- "NSCoder"
-- !private "CGRectEqualToRect"
-- !private "NSEC_PER_SEC"
-- "UICollectionViewDataSource"
-- "AnyObject"
-- "NSIndexPath"
-- "UICollectionViewLayout"
+- !private "dispatch_get_main_queue"
+- "CGPoint"
 - !private "!="
-- "UICollectionViewDelegate"
-- !private ">"
-- !private "UICollectionViewFlowLayout"
-- !private "CGRectIntersection"
-- !private "UICollectionViewCell"
-- "KDDragAndDropCollectionViewDataSource"
-- "KDDroppable"
-- "KDDraggable"
-- "CGRect"
+- !private "UIGraphicsEndImageContext"
+- !private "UIImageView"
+- !private "&&"
+- !private "CGRectEqualToRect"
+- !private "Double"
+- !private "NSEC_PER_SEC"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -139,6 +140,7 @@ depends-member:
 - !private ["Ps9AnyObject", "opaque"]
 - ["Ps9AnyObject", "paging"]
 - !private ["Ps9AnyObject", "performBatchUpdates"]
+- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "renderInContext"]
 - ["Ps9AnyObject", "representationImageAtPoint"]
@@ -242,6 +244,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "opaque"]
 - ["Ps11CVarArgType", "paging"]
 - !private ["Ps11CVarArgType", "performBatchUpdates"]
+- !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "reloadData"]
 - !private ["Ps11CVarArgType", "renderInContext"]
 - ["Ps11CVarArgType", "representationImageAtPoint"]
@@ -323,6 +326,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "opaque"]
 - ["Ps28CustomDebugStringConvertible", "paging"]
 - !private ["Ps28CustomDebugStringConvertible", "performBatchUpdates"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - !private ["Ps28CustomDebugStringConvertible", "renderInContext"]
 - ["Ps28CustomDebugStringConvertible", "representationImageAtPoint"]
@@ -396,6 +400,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "opaque"]
 - ["Ps23CustomStringConvertible", "paging"]
 - !private ["Ps23CustomStringConvertible", "performBatchUpdates"]
+- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
 - !private ["Ps23CustomStringConvertible", "renderInContext"]
 - ["Ps23CustomStringConvertible", "representationImageAtPoint"]
@@ -467,6 +472,7 @@ depends-member:
 - !private ["Ps9Equatable", "origin"]
 - ["Ps9Equatable", "paging"]
 - !private ["Ps9Equatable", "performBatchUpdates"]
+- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "renderInContext"]
 - ["Ps9Equatable", "representationImageAtPoint"]
@@ -549,6 +555,7 @@ depends-member:
 - !private ["Ps8Hashable", "opaque"]
 - ["Ps8Hashable", "paging"]
 - !private ["Ps8Hashable", "performBatchUpdates"]
+- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "renderInContext"]
 - ["Ps8Hashable", "representationImageAtPoint"]
@@ -642,6 +649,7 @@ depends-member:
 - !private ["C28KDDragAndDropCollectionViews27KDDragAndDropCollectionView", "moveItemAtIndexPath"]
 - ["C28KDDragAndDropCollectionViews27KDDragAndDropCollectionView", "paging"]
 - !private ["C28KDDragAndDropCollectionViews27KDDragAndDropCollectionView", "performBatchUpdates"]
+- !private ["C28KDDragAndDropCollectionViews27KDDragAndDropCollectionView", "print"]
 - !private ["C28KDDragAndDropCollectionViews27KDDragAndDropCollectionView", "reloadData"]
 - ["C28KDDragAndDropCollectionViews27KDDragAndDropCollectionView", "representationImageAtPoint"]
 - !private ["C28KDDragAndDropCollectionViews27KDDragAndDropCollectionView", "scrollRectToVisible"]
@@ -698,6 +706,7 @@ depends-member:
 - !private ["P28KDDragAndDropCollectionViews11KDDraggable", "moveItemAtIndexPath"]
 - !private ["P28KDDragAndDropCollectionViews11KDDraggable", "paging"]
 - !private ["P28KDDragAndDropCollectionViews11KDDraggable", "performBatchUpdates"]
+- !private ["P28KDDragAndDropCollectionViews11KDDraggable", "print"]
 - !private ["P28KDDragAndDropCollectionViews11KDDraggable", "reloadData"]
 - ["P28KDDragAndDropCollectionViews11KDDraggable", "representationImageAtPoint"]
 - !private ["P28KDDragAndDropCollectionViews11KDDraggable", "scrollRectToVisible"]
@@ -750,6 +759,7 @@ depends-member:
 - !private ["P28KDDragAndDropCollectionViews11KDDroppable", "moveItemAtIndexPath"]
 - !private ["P28KDDragAndDropCollectionViews11KDDroppable", "paging"]
 - !private ["P28KDDragAndDropCollectionViews11KDDroppable", "performBatchUpdates"]
+- !private ["P28KDDragAndDropCollectionViews11KDDroppable", "print"]
 - !private ["P28KDDragAndDropCollectionViews11KDDroppable", "reloadData"]
 - ["P28KDDragAndDropCollectionViews11KDDroppable", "representationImageAtPoint"]
 - !private ["P28KDDragAndDropCollectionViews11KDDroppable", "scrollRectToVisible"]
@@ -832,6 +842,7 @@ depends-member:
 - !private ["PSo8NSCoding", "opaque"]
 - ["PSo8NSCoding", "paging"]
 - !private ["PSo8NSCoding", "performBatchUpdates"]
+- !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "renderInContext"]
 - ["PSo8NSCoding", "representationImageAtPoint"]
@@ -912,6 +923,7 @@ depends-member:
 - !private ["CSo8NSObject", "opaque"]
 - ["CSo8NSObject", "paging"]
 - !private ["CSo8NSObject", "performBatchUpdates"]
+- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "renderInContext"]
 - ["CSo8NSObject", "representationImageAtPoint"]
@@ -978,6 +990,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "opaque"]
 - ["PSo16NSObjectProtocol", "paging"]
 - !private ["PSo16NSObjectProtocol", "performBatchUpdates"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "renderInContext"]
 - ["PSo16NSObjectProtocol", "representationImageAtPoint"]
@@ -1074,6 +1087,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "opaque"]
 - ["PSo29UIAccessibilityIdentification", "paging"]
 - !private ["PSo29UIAccessibilityIdentification", "performBatchUpdates"]
+- !private ["PSo29UIAccessibilityIdentification", "print"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - ["PSo29UIAccessibilityIdentification", "representationImageAtPoint"]
 - !private ["PSo29UIAccessibilityIdentification", "scrollRectToVisible"]
@@ -1134,6 +1148,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "opaque"]
 - ["PSo12UIAppearance", "paging"]
 - !private ["PSo12UIAppearance", "performBatchUpdates"]
+- !private ["PSo12UIAppearance", "print"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - ["PSo12UIAppearance", "representationImageAtPoint"]
 - !private ["PSo12UIAppearance", "scrollRectToVisible"]
@@ -1194,6 +1209,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "opaque"]
 - ["PSo21UIAppearanceContainer", "paging"]
 - !private ["PSo21UIAppearanceContainer", "performBatchUpdates"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - ["PSo21UIAppearanceContainer", "representationImageAtPoint"]
 - !private ["PSo21UIAppearanceContainer", "scrollRectToVisible"]
@@ -1269,6 +1285,7 @@ depends-member:
 - !private ["CSo16UICollectionView", "moveItemAtIndexPath"]
 - ["CSo16UICollectionView", "paging"]
 - !private ["CSo16UICollectionView", "performBatchUpdates"]
+- !private ["CSo16UICollectionView", "print"]
 - !private ["CSo16UICollectionView", "reloadData"]
 - ["CSo16UICollectionView", "representationImageAtPoint"]
 - !private ["CSo16UICollectionView", "scrollRectToVisible"]
@@ -1345,6 +1362,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "opaque"]
 - ["PSo17UICoordinateSpace", "paging"]
 - !private ["PSo17UICoordinateSpace", "performBatchUpdates"]
+- !private ["PSo17UICoordinateSpace", "print"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - ["PSo17UICoordinateSpace", "representationImageAtPoint"]
 - !private ["PSo17UICoordinateSpace", "scrollRectToVisible"]
@@ -1405,6 +1423,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "opaque"]
 - ["PSo13UIDynamicItem", "paging"]
 - !private ["PSo13UIDynamicItem", "performBatchUpdates"]
+- !private ["PSo13UIDynamicItem", "print"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - ["PSo13UIDynamicItem", "representationImageAtPoint"]
 - !private ["PSo13UIDynamicItem", "scrollRectToVisible"]
@@ -1465,6 +1484,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "opaque"]
 - ["PSo18UIFocusEnvironment", "paging"]
 - !private ["PSo18UIFocusEnvironment", "performBatchUpdates"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - ["PSo18UIFocusEnvironment", "representationImageAtPoint"]
 - !private ["PSo18UIFocusEnvironment", "scrollRectToVisible"]
@@ -1539,6 +1559,7 @@ depends-member:
 - !private ["CSo11UIResponder", "opaque"]
 - ["CSo11UIResponder", "paging"]
 - !private ["CSo11UIResponder", "performBatchUpdates"]
+- !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "reloadData"]
 - ["CSo11UIResponder", "representationImageAtPoint"]
 - !private ["CSo11UIResponder", "scrollRectToVisible"]
@@ -1607,6 +1628,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "moveItemAtIndexPath"]
 - ["CSo12UIScrollView", "paging"]
 - !private ["CSo12UIScrollView", "performBatchUpdates"]
+- !private ["CSo12UIScrollView", "print"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - ["CSo12UIScrollView", "representationImageAtPoint"]
 - !private ["CSo12UIScrollView", "scrollRectToVisible"]
@@ -1666,6 +1688,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "opaque"]
 - ["PSo18UITraitEnvironment", "paging"]
 - !private ["PSo18UITraitEnvironment", "performBatchUpdates"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - ["PSo18UITraitEnvironment", "representationImageAtPoint"]
 - !private ["PSo18UITraitEnvironment", "scrollRectToVisible"]
@@ -1739,6 +1762,7 @@ depends-member:
 - !private ["CSo6UIView", "opaque"]
 - ["CSo6UIView", "paging"]
 - !private ["CSo6UIView", "performBatchUpdates"]
+- !private ["CSo6UIView", "print"]
 - !private ["CSo6UIView", "reloadData"]
 - ["CSo6UIView", "representationImageAtPoint"]
 - !private ["CSo6UIView", "scrollRectToVisible"]
@@ -1860,6 +1884,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "origin"]
 - ["Ps12_Reflectable", "paging"]
 - !private ["Ps12_Reflectable", "performBatchUpdates"]
+- !private ["Ps12_Reflectable", "print"]
 - !private ["Ps12_Reflectable", "reloadData"]
 - ["Ps12_Reflectable", "representationImageAtPoint"]
 - !private ["Ps12_Reflectable", "scrollRectToVisible"]

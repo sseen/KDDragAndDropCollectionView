@@ -156,7 +156,13 @@ class KDDragAndDropCollectionView: UICollectionView, KDDraggable, KDDroppable {
         
         return (self.indexPathForCellOverlappingRect(rect) != nil)
     }
-    
+    /**
+     overlapping 目前遮住了哪个 cell
+     
+     - parameter rect: overlapping
+     
+     - returns: 
+     */
     func indexPathForCellOverlappingRect( rect : CGRect) -> NSIndexPath? {
         
         var overlappingArea : CGFloat = 0.0
@@ -178,12 +184,14 @@ class KDDragAndDropCollectionView: UICollectionView, KDDraggable, KDDroppable {
         for visible in visibleCells {
             
             let intersection = CGRectIntersection(visible.frame, rect)
-            
+            // 这个时候 overlappingArea 有用了，只有覆盖面最大的保留
             if (intersection.width * intersection.height) > overlappingArea {
                 
                 overlappingArea = intersection.width * intersection.width
                 
                 cellCandidate = visible
+                
+                print(cellCandidate)
             }
             
         }
@@ -346,7 +354,8 @@ class KDDragAndDropCollectionView: UICollectionView, KDDraggable, KDDroppable {
     func didMoveOutItem(item : AnyObject) -> Void {
         
         guard let dragDropDataSource = self.dataSource as? KDDragAndDropCollectionViewDataSource,
-              let existngIndexPath = dragDropDataSource.collectionView(self, indexPathForDataItem: item) else {
+              let existngIndexPath = dragDropDataSource.collectionView(self, indexPathForDataItem: item)
+            else {
             
             return
         }

@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KDDragAndDropCollectionViews/KDDragAndDropManager.swift"
-            timestampString = "484562103.073733"
+            filePath = "KDDragAndDropCollectionViews/KDDragAndDropCollectionView.swift"
+            timestampString = "484630405.859209"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
-            landmarkName = "updateForLongPress(_:)"
+            startingLineNumber = "363"
+            endingLineNumber = "363"
+            landmarkName = "didMoveOutItem(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

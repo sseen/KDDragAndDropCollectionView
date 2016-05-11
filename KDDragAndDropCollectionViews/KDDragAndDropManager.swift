@@ -40,8 +40,22 @@ import UIKit
 
 
 @objc protocol KDDroppable {
+    /**
+     拖动的overlapping 是不是和 cell 的重叠
+     
+     - parameter rect: 目前拖动的坐标
+     
+     - returns:
+     */
     func canDropAtRect(rect : CGRect) -> Bool
     func willMoveItem(item : AnyObject, inRect rect : CGRect) -> Void
+    /**
+     移动cell，拖动还没离开原cell，不移动
+     - parameter item: 原始的item
+     - parameter rect: 目前拖动的坐标
+     
+     - returns:
+     */
     func didMoveItem(item : AnyObject, inRect rect : CGRect) -> Void
     func didMoveOutItem(item : AnyObject) -> Void
     func dropDataItem(item : AnyObject, atRect : CGRect) -> Void
@@ -191,7 +205,7 @@ class KDDragAndDropManager: NSObject, UIGestureRecognizerDelegate {
                     let rect = self.canvas.convertRect(bundl.representationImageView.frame, toView: mainOverView)
                     
                     if droppable.canDropAtRect(rect) {
-                        
+                        // 有没有跨collection view
                         if mainOverView != bundl.overDroppableView { // if it is the first time we are entering
                             
                             (bundl.overDroppableView as! KDDroppable).didMoveOutItem(bundl.dataItem)
