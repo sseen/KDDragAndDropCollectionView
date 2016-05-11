@@ -209,7 +209,7 @@ class KDDragAndDropCollectionView: UICollectionView, KDDraggable, KDDroppable {
     func willMoveItem(item : AnyObject, inRect rect : CGRect) -> Void {
         
         let dragDropDataSource = self.dataSource as! KDDragAndDropCollectionViewDataSource // its guaranteed to have a data source
-        
+        // 这里还不知道有什么用
         if let _ = dragDropDataSource.collectionView(self, indexPathForDataItem: item) { // if data item exists
             return
         }

@@ -30,9 +30,9 @@ import UIKit
     /**
      记录item的 indexpath
      
-     - parameter point: <#point description#>
+     - parameter point:
      
-     - returns: <#return value description#>
+     - returns:
      */
     optional func startDraggingAtPoint(point : CGPoint) -> Void
     optional func stopDragging() -> Void
@@ -57,6 +57,13 @@ import UIKit
      - returns:
      */
     func didMoveItem(item : AnyObject, inRect rect : CGRect) -> Void
+    /**
+     跨collecitonview 移动，需要删除原始的 cell
+     
+     - parameter item: 原始的 cell
+     
+     - returns: 
+     */
     func didMoveOutItem(item : AnyObject) -> Void
     func dropDataItem(item : AnyObject, atRect : CGRect) -> Void
 }

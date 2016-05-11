@@ -145,6 +145,12 @@ SWIFT_PROTOCOL("_TtP28KDDragAndDropCollectionViews11KDDroppable_")
 ///
 /// \returns  
 - (void)didMoveItem:(id _Nonnull)item inRect:(CGRect)rect;
+
+/// 跨collecitonview 移动，需要删除原始的 cell
+///
+/// \param item 原始的 cell
+///
+/// \returns  
 - (void)didMoveOutItem:(id _Nonnull)item;
 - (void)dropDataItem:(id _Nonnull)item atRect:(CGRect)atRect;
 @end
@@ -173,9 +179,9 @@ SWIFT_PROTOCOL("_TtP28KDDragAndDropCollectionViews11KDDraggable_")
 
 /// 记录item的 indexpath
 ///
-/// \param point <#point description#>
+/// \param point 
 ///
-/// \returns  <#return value description#>
+/// \returns  
 - (void)startDraggingAtPoint:(CGPoint)point;
 - (void)stopDragging;
 @end
@@ -209,7 +215,7 @@ SWIFT_CLASS("_TtC28KDDragAndDropCollectionViews27KDDragAndDropCollectionView")
 
 /// overlapping 目前遮住了哪个 cell
 ///
-/// \param rect 
+/// \param rect overlapping
 ///
 /// \returns  
 - (NSIndexPath * _Nullable)indexPathForCellOverlappingRect:(CGRect)rect;
