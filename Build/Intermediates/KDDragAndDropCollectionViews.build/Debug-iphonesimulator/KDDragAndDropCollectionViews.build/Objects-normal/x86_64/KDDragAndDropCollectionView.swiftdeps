@@ -9,80 +9,81 @@ provides-member:
 - ["P28KDDragAndDropCollectionViews37KDDragAndDropCollectionViewDataSource", ""]
 - ["C28KDDragAndDropCollectionViews27KDDragAndDropCollectionView", ""]
 provides-dynamic-lookup:
+- "paging"
+- "didMoveItem"
+- "dataItemAtPoint"
+- "awakeFromNib"
+- "startDraggingAtPoint"
 - "dropDataItem"
-- "iDelegate"
+- "draggingPathOfCellBeingDragged"
+- "animating"
+- "checkForEdgesAndScroll"
+- "indexPathForCellOverlappingRect"
+- "iDataSource"
 - "didMoveOutItem"
+- "dragDataItem"
 - "isHorizontal"
 - "stopDragging"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "dragDataItem"
-- "iDataSource"
+- "iDelegate"
 - "canDragAtPoint"
 - "willMoveItem"
 - "representationImageAtPoint"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
 - "canDropAtRect"
-- "checkForEdgesAndScroll"
-- "dataItemAtPoint"
-- "didMoveItem"
-- "draggingPathOfCellBeingDragged"
-- "startDraggingAtPoint"
-- "awakeFromNib"
-- "indexPathForCellOverlappingRect"
-- "paging"
-- "animating"
 depends-top-level:
-- "CGPoint"
-- "BooleanLiteralType"
-- !private "+="
-- !private "UIGraphicsGetImageFromCurrentImageContext"
-- "UIView"
-- !private "*"
-- "Void"
-- !private "-="
-- !private "CGRectEqualToRect"
-- !private "CGRectIntersectsRect"
-- "UICollectionViewDataSource"
-- !private "UIImageView"
-- "KDDragAndDropCollectionViewDataSource"
-- !private "=="
-- "UICollectionViewLayout"
-- !private "Array"
-- "AnyObject"
-- !private "UIGraphicsEndImageContext"
-- "CGRect"
-- !private "-"
-- !private "!="
-- !private "UICollectionViewFlowLayout"
-- !private "Double"
-- !private "NSEC_PER_SEC"
-- !private "&&"
-- !private "print"
-- !private "Int64"
-- "KDDragAndDropCollectionView"
-- !private "<"
-- !private "DISPATCH_TIME_NOW"
-- !private "dispatch_time"
-- !private ">"
-- !private "UIGraphicsBeginImageContextWithOptions"
-- !private "CGFloat"
-- "UICollectionView"
-- "NSCoder"
-- !private "!"
-- !private "UICollectionViewCell"
-- !private "||"
-- !private "dispatch_after"
-- !private "UIGraphicsGetCurrentContext"
-- !private "dispatch_get_main_queue"
-- !private "CGRectIntersection"
 - "KDDraggable"
 - "KDDroppable"
-- "Bool"
-- "UICollectionViewDelegate"
+- !private "dispatch_time"
+- "Void"
 - "NSIndexPath"
+- "NSCoder"
+- !private "!="
+- "UICollectionViewDelegate"
+- !private "DISPATCH_TIME_NOW"
+- !private "=="
+- !private "-"
+- !private "Int64"
+- !private "-="
+- "UIView"
+- "CGPoint"
+- !private "UIGraphicsEndImageContext"
+- !private "Double"
+- !private "&&"
+- !private "print"
+- !private "NSEC_PER_SEC"
+- !private "+="
+- "UICollectionView"
+- !private ">"
+- !private "UIImageView"
+- !private "CGFloat"
+- !private "UIGraphicsBeginImageContextWithOptions"
+- !private "CGRectEqualToRect"
+- !private "UIGraphicsGetCurrentContext"
+- !private "UICollectionViewCell"
+- !private "dispatch_get_main_queue"
+- !private "UICollectionViewFlowLayout"
+- !private "dispatch_after"
+- "UICollectionViewDataSource"
+- "CGRect"
+- "Bool"
+- !private "CGRectIntersection"
+- !private "StringLiteralType"
+- !private "||"
+- !private "CGRectIntersectsRect"
+- "KDDragAndDropCollectionViewDataSource"
+- "UICollectionViewLayout"
+- !private "!"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "Array"
+- !private "*"
+- !private "<"
+- "AnyObject"
+- "BooleanLiteralType"
+- "KDDragAndDropCollectionView"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -172,6 +173,7 @@ depends-member:
 - !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Ps21BitwiseOperationsType", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["CSo7CALayer", "renderInContext"]
@@ -255,6 +257,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "visibleCells"]
 - ["Ps11CVarArgType", "willMoveItem"]
 - ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
@@ -411,6 +414,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "visibleCells"]
 - ["Ps23CustomStringConvertible", "willMoveItem"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
 - !private ["Sd", "init"]
 - !private ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "CGRectEqualToRect"]
@@ -487,6 +491,8 @@ depends-member:
 - !private ["Ps9Equatable", "x"]
 - !private ["Ps9Equatable", "y"]
 - ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
 - !private ["Ps23FloatLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps23FloatLiteralConvertible", "Stride"]
 - !private ["Ps23FloatLiteralConvertible", "init"]
@@ -576,7 +582,12 @@ depends-member:
 - !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
 - !private ["Vs5Int64", "init"]
+- !private ["Vs4Int8", "deinit"]
 - !private ["Ps21IntegerArithmeticType", "Distance"]
 - !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["Ps21IntegerArithmeticType", "init"]
@@ -857,6 +868,7 @@ depends-member:
 - !private ["PSo9NSCopying", "item"]
 - !private ["CSo11NSIndexPath", "init"]
 - !private ["CSo11NSIndexPath", "item"]
+- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGFloat"]
@@ -1003,11 +1015,13 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "item"]
+- !private ["CSo8NSString", "init"]
 - !private ["Ps21NilLiteralConvertible", "Horizontal"]
 - ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Sq", "Horizontal"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Ps21RandomAccessIndexType", "init"]
@@ -1031,10 +1045,14 @@ depends-member:
 - !private ["Ps16SignedNumberType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "Stride"]
 - !private ["Ps16SignedNumberType", "init"]
+- !private ["Ps10Streamable", "init"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "Stride"]
 - !private ["Ps10Strideable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "CGRect"]
 - !private ["PSo29UIAccessibilityIdentification", "CGRectEqualToRect"]
 - !private ["PSo29UIAccessibilityIdentification", "CGRectIntersection"]
@@ -1770,6 +1788,13 @@ depends-member:
 - ["CSo6UIView", "stopDragging"]
 - !private ["CSo6UIView", "visibleCells"]
 - ["CSo6UIView", "willMoveItem"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps10_ArrayType", "Element"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
@@ -1777,10 +1802,14 @@ depends-member:
 - !private ["Ps10_ArrayType", "_Element"]
 - !private ["Ps10_ArrayType", "count"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps31_BuiltinFloatLiteralConvertible", "init"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps19_CVarArgAlignedType", "IntegerLiteralType"]
 - !private ["Ps19_CVarArgAlignedType", "Stride"]
 - !private ["Ps19_CVarArgAlignedType", "init"]
@@ -1918,12 +1947,15 @@ depends-nominal:
 - !private "VSC6CGRect"
 - !private "VSC6CGSize"
 - "Ps11CVarArgType"
+- !private "Vs9Character"
 - !private "Ps14CollectionType"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - !private "Sd"
 - "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
 - !private "Ps23FloatLiteralConvertible"
 - !private "Ps17FloatingPointType"
 - !private "Ps16ForwardIndexType"
@@ -1933,7 +1965,10 @@ depends-nominal:
 - !private "Ps9Indexable"
 - !private "Vs17IndexingGenerator"
 - !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
 - !private "Vs5Int64"
+- !private "Vs4Int8"
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
@@ -1948,18 +1983,25 @@ depends-nominal:
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "CSo11NSIndexPath"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - "Ps21NilLiteralConvertible"
 - "Sq"
+- !private "Ps16OutputStreamType"
 - !private "Ps21RandomAccessIndexType"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
 - !private "Ps12SequenceType"
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
+- !private "Ps10Streamable"
 - !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -1978,10 +2020,21 @@ depends-nominal:
 - "CSo12UIScrollView"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "Ps31_BuiltinFloatLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps19_CVarArgAlignedType"
 - !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps24_DestructorSafeContainer"

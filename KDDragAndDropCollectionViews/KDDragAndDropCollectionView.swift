@@ -191,7 +191,7 @@ class KDDragAndDropCollectionView: UICollectionView, KDDraggable, KDDroppable {
                 
                 cellCandidate = visible
                 
-                print(cellCandidate)
+                print(cellCandidate, "ssn")
             }
             
         }
@@ -313,7 +313,7 @@ class KDDragAndDropCollectionView: UICollectionView, KDDraggable, KDDroppable {
         
         if  let existingIndexPath = dragDropDS.collectionView(self, indexPathForDataItem: item),
             let indexPath = self.indexPathForCellOverlappingRect(rect) {
-   
+                print("item", indexPath == existingIndexPath, indexPath, existingIndexPath, "\(item)")
                 if indexPath.item != existingIndexPath.item {
                     
                     dragDropDS.collectionView(self, moveDataItemFromIndexPath: existingIndexPath, toIndexPath: indexPath)
