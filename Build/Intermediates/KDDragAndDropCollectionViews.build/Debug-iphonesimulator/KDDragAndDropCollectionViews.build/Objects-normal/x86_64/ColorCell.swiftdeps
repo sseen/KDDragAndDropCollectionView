@@ -9,8 +9,8 @@ provides-dynamic-lookup:
 - "label"
 depends-top-level:
 - "UILabel"
-- "ColorCell"
 - "UICollectionViewCell"
+- "ColorCell"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "label"]

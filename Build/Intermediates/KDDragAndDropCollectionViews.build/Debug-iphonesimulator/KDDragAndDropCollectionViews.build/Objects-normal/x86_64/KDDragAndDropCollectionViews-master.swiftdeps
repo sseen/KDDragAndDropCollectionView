@@ -1,9 +1,9 @@
-version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "4252904fbfe8900486eb68e3e2e81593"
-build_time: [516369377, 188098000]
+build_time: [516781939, 584196000]
 inputs:
-  "/Users/zyang/SNGithub/KDDragAndDropCollectionView/KDDragAndDropCollectionViews/KDDragAndDropCollectionView.swift": [516369377, 0]
-  "/Users/zyang/SNGithub/KDDragAndDropCollectionView/KDDragAndDropCollectionViews/KDDragAndDropManager.swift": [516365252, 0]
+  "/Users/zyang/SNGithub/KDDragAndDropCollectionView/KDDragAndDropCollectionViews/KDDragAndDropCollectionView.swift": [516781939, 0]
+  "/Users/zyang/SNGithub/KDDragAndDropCollectionView/KDDragAndDropCollectionViews/KDDragAndDropManager.swift": [516714389, 0]
   "/Users/zyang/SNGithub/KDDragAndDropCollectionView/KDDragAndDropCollectionViews/ViewController.swift": [516249867, 0]
   "/Users/zyang/SNGithub/KDDragAndDropCollectionView/KDDragAndDropCollectionViews/ColorCell.swift": [516074469, 0]
   "/Users/zyang/SNGithub/KDDragAndDropCollectionView/KDDragAndDropCollectionViews/AppDelegate.swift": [516074469, 0]

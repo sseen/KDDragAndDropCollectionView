@@ -328,7 +328,7 @@ class KDDragAndDropCollectionView: UICollectionView, KDDraggable, KDDroppable {
                             
                             self.animating = false
                             
-                            self.reloadData()
+//                            self.reloadData()
                             
                         })
                     

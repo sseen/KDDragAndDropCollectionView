@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C28KDDragAndDropCollectionViews11AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
-- "applicationWillEnterForeground"
-- "applicationWillTerminate"
 - "applicationDidBecomeActive"
 - "applicationWillResignActive"
 - "application"
 - "applicationDidEnterBackground"
+- "window"
+- "applicationWillEnterForeground"
+- "applicationWillTerminate"
 depends-top-level:
-- "NSObject"
-- "UIApplicationDelegate"
 - "Bool"
-- "UIResponder"
-- "AppDelegate"
 - "UIApplication"
 - "AnyObject"
+- "NSObject"
+- "UIApplicationDelegate"
 - "UIWindow"
 - !private "BooleanLiteralType"
+- "AppDelegate"
+- "UIResponder"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
